@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElderCare Dashboard</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Welcome to ElderCare</h1>
+    </div>
+    <nav>
+      <button id="dashboardButton" class="service-button">Dashboard</button>
+      <button id="healthcareButton" class="service-button">Healthcare</button>
+      <button id="groceryButton" class="service-button">Grocery</button>
+      <button id="financeButton" class="service-button">Finance</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Dashboard Section -->
+    <div id="dashboard" class="service-content hidden">
+      <h2>User Dashboard</h2>
+      <div id="account-details">
+        <h3>Account Details</h3>
+        <p>Name: John Doe</p>
+        <p>Email: john.doe@example.com</p>
+      </div>
+      <div id="health-reports">
+        <h3>Health Reports</h3>
+        <div class="card">
+          <p>Report 1: Blood Pressure</p>
+          <p>Status: Normal</p>
+        </div>
+        <div class="card">
+          <p>Report 2: Sugar Level</p>
+          <p>Status: High</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Healthcare Section -->
+    <div id="healthcare" class="service-content hidden">
+      <h2>Healthcare Services</h2>
+      <div id="healthcare-details"></div>
+    </div>
+
+    <!-- Grocery Section -->
+    <div id="grocery" class="service-content hidden">
+      <h2>Grocery Services</h2>
+      <div id="grocery-details"></div>
+    </div>
+
+    <!-- Finance Section -->
+    <div id="finance" class="service-content hidden">
+      <h2>Finance Services</h2>
+      <div id="finance-details"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
